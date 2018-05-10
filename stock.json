@@ -1,0 +1,334 @@
+{
+  "weapons": [
+    {
+      "Name": "A280 Fusil Blaster",
+      "Skill": "Dist. (lou)",
+      "Dam": 9,
+      "Crit": 3,
+      "Range": "Longue",
+      "Price": 900,
+      "Special": "Réglage étourdissant",
+      "Ability": "N/A"
+    },
+    {
+      "Name": "DLT-19 Fusil Blaster lourd",
+      "Skill": "Dist. (lou)",
+      "Dam": 10,
+      "Crit": 3,
+      "Range": "Longue",
+      "Price": 1500,
+      "Special": "Automatique, Encombrant 3",
+      "Ability": "N/A"
+    },
+    {
+      "Name": "E-11 Fusil Blaster",
+      "Skill": "Dist. (lou)",
+      "Dam": 9,
+      "Crit": 3,
+      "Range": "Longue",
+      "Price": 900,
+      "Special": "Réglage étourdissant",
+      "Ability": "N/A"
+    },
+    {
+      "Name": "Fusil de chasse",
+      "Skill": "Dist. (lou)",
+      "Dam": 7,
+      "Crit": 5,
+      "Range": "Moyenne",
+      "Price": 250,
+      "Special": "Encombrant 2",
+      "Ability": "N/A"
+    },
+    {
+      "Name": "EE-3 Carabine Blaster",
+      "Skill": "Dist. (lou)",
+      "Dam": 9,
+      "Crit": 3,
+      "Range": "Moyenne",
+      "Price": 850,
+      "Special": "Réglage étourdissant",
+      "Ability": "N/A"
+    },
+    {
+      "Name": "DL-44 Pistolet Blaster",
+      "Skill": "Dist. (lég)",
+      "Dam": 6,
+      "Crit": 3,
+      "Range": "Moyenne",
+      "Price": 400,
+      "Special": "Réglage étourdissant",
+      "Ability": "N/A"
+    },
+    {
+      "Name": "DL-19C Pistolet Blaster",
+      "Skill": "Dist. (lég)",
+      "Dam": 5,
+      "Crit": 4,
+      "Range": "Moyenne",
+      "Price": 450,
+      "Special": "Réglage étourdissant",
+      "Ability": "Talent Customisation peut * 2"
+    },
+    {
+      "Name": "CR-2 Pistolet Blaster lourd",
+      "Skill": "Dist. (lég)",
+      "Dam": 7,
+      "Crit": 4,
+      "Range": "Moyenne",
+      "Price": 600,
+      "Special": "Réglage étourdissant",
+      "Ability": "N/A"
+    },
+    {
+      "Name": "HL-27 Pistolet Blaster léger",
+      "Skill": "Dist. (lég)",
+      "Dam": 5,
+      "Crit": 3,
+      "Range": "Moyenne",
+      "Price": 450,
+      "Special": "Précis 1, Réglage étourdissant",
+      "Ability": "N/A"
+    },
+    {
+      "Name": "Grenade Fragmentation ",
+      "Skill": "Dist. (lég)",
+      "Dam": 8,
+      "Crit": 4,
+      "Range": "Courte",
+      "Price": 50,
+      "Special": "Souffle 6, Munition limitées 1",
+      "Ability": "Explo. peut être retardée"
+    },
+    {
+      "Name": "Couteau de combat",
+      "Skill": "CaC",
+      "Dam": "+1",
+      "Crit": 3,
+      "Range": "Engagé",
+      "Price": 25,
+      "Special": "",
+      "Ability": ""
+    },
+    {
+      "Name": "Vibrolame",
+      "Skill": "CaC",
+      "Dam": "+1",
+      "Crit": 2,
+      "Range": "Engagé",
+      "Price": 250,
+      "Special": "Perforant 2, Sanguinaire 1",
+      "Ability": ""
+    },
+    {
+      "Name": "Grenade Stun",
+      "Skill": "Dist. (lég)",
+      "Dam": 8,
+      "Crit": "N/A",
+      "Range": "Courte",
+      "Price": 75,
+      "Special": "Désorientation 3, Dégâts étourdissant, Souffle 8, Munition limitées 1",
+      "Ability": "Explo. peut être retardée"
+    },
+    {
+      "Name": "Matraque étourdissante",
+      "Skill": "CaC",
+      "Dam": "+3",
+      "Crit": "2",
+      "Range": "Engagé",
+      "Price": 75,
+      "Special": "Désorientation 2",
+      "Ability": ""
+    },
+    {
+      "Name": "Coup-de-poing",
+      "Skill": "Pugilat",
+      "Dam": "+1",
+      "Crit": "4",
+      "Range": "Engagé",
+      "Price": 75,
+      "Special": "Désorientation 3",
+      "Ability": ""
+    }
+
+  ],
+  "armors": [
+    {
+      "Name": "Vêtements lourds",
+      "Def": 0,
+      "Enc": 1,
+      "Special": "N/A",
+      "Price": 50
+    },
+    {
+      "Name": "Armure matelassée",
+      "Def": 0,
+      "Enc": 2,
+      "Special": "N/A",
+      "Price": 500
+    },
+    {
+      "Name": "Vêtement Renforcés",
+      "Def": 1,
+      "Enc": 1,
+      "Special": "N/A",
+      "Price": 1000
+    },
+    {
+      "Name": "Equipement environnement hostile",
+      "Def": 0,
+      "Enc": 1,
+      "Special": "-<i class=\"die-symbol ng-isolate-scope setback\" ng-class=\"symbol\"/> condition clima.",
+      "Price": 500
+    },{
+      "Name": "Armure plaque laminée",
+      "Def": 0,
+      "Enc": 2,
+      "Special": "Armure complète, avec casque",
+      "Price": 2500
+    },{
+      "Name": "Veste flak",
+      "Def": 0,
+      "Enc": 1,
+      "Special": "Donne +1 Enc. contre Souffle",
+      "Price": 300
+    },{
+      "Name": "Veste anti-blast",
+      "Def": 0,
+      "Enc": 1,
+      "Special": "Donne +1 Enc. contre projectiles",
+      "Price": 200
+    },{
+      "Name": "Equipement environnement hostiles renforcé",
+      "Def": 0,
+      "Enc": 1,
+      "Special": "-<i class=\"die-symbol ng-isolate-scope setback\" ng-class=\"symbol\"/> conditions clima., +<i class=\"die-symbol ng-isolate-scope boost\" ng-class=\"symbol\"/> à Resistance",
+      "Price": 850
+    },{
+      "Name": "Combinaison de mécanicien",
+      "Def": 0,
+      "Enc": 2,
+      "Special": "Trousse à outil intégrée",
+      "Price": 1175
+    },{
+      "Name": "Armure de combat lourde",
+      "Def": 1,
+      "Enc": 2,
+      "Special": "Scellée, Rare",
+      "Price": 5000
+    }
+  ],
+  "gears": [
+    {
+      "Name": "Comlink",
+      "Type": "Communication",
+      "Description": "",
+      "Price": 25
+    },{
+      "Name": "Comlink longue portée",
+      "Type": "Communication",
+      "Description": "",
+      "Price": 200
+    },{
+      "Name": "Macrojumelles",
+      "Type": "Detection",
+      "Description": "Voir sur de longues distances",
+      "Price": 75
+    },{
+      "Name": "Jumelles scanner",
+      "Type": "Detection",
+      "Description": "Voir normalement dans l'obscurité",
+      "Price": 150
+    },{
+      "Name": "Stimpack",
+      "Type": "Médical",
+      "Description": "Seringue auto-injectable",
+      "Price": 25
+    },{
+      "Name": "Médipac de secours",
+      "Type": "Médical",
+      "Description": "Permet de soigner sans malus",
+      "Price": 100
+    },{
+      "Name": "Médipac",
+      "Type": "Médical",
+      "Description": "Permet de soigner +<i class=\"die-symbol ng-isolate-scope boost\" ng-class=\"symbol\"/>",
+      "Price": 400
+    },{
+      "Name": "Outils de mécanicien",
+      "Type": "Outils",
+      "Description": "Permet de réparer sans malus",
+      "Price": 350
+    },{
+      "Name": "Outils de slicer",
+      "Type": "Outils",
+      "Description": "Permet de slicer sans malus",
+      "Price": 500
+    },{
+      "Name": "Datapad",
+      "Type": "Communication",
+      "Description": "",
+      "Price": 75
+    },{
+      "Name": "Lanterne électrique",
+      "Type": "Outils",
+      "Description": "Eclairage",
+      "Price": 150
+    },{
+      "Name": "Matériel d'escalade",
+      "Type": "Outils",
+      "Description": "Corde et pitons",
+      "Price": 400
+    },{
+      "Name": "Ceinture multi-usage",
+      "Type": "Stockage",
+      "Description": "+1 seuil encomb.",
+      "Price": 25
+    }
+  ,{
+      "Name": "Sac à dos",
+      "Type": "Stockage",
+      "Description": "+4 seuil encomb.",
+      "Price": 50
+    }
+
+  ],
+  "kits": [
+    {
+      "Name": "Camouflage naturel",
+      "Type": "Kit Armure",
+      "Description": "+<i class=\"die-symbol ng-isolate-scope setback\" ng-class=\"symbol\"/> Perception, Vigilance",
+      "Price": 75
+    },{
+      "Name": "Indicateur de menace",
+      "Type": "Kit Armure",
+      "Description": "+<i class=\"die-symbol ng-isolate-scope advantage\" ng-class=\"symbol\"/> pour Init.",
+      "Price": 750
+    },{
+      "Name": "Scanner intégré",
+      "Type": "Kit Armure",
+      "Description": "Casque. +<i class=\"die-symbol ng-isolate-scope boost\" ng-class=\"symbol\"/> Perception pour detect. ennemis",
+      "Price": 1000
+    },{
+      "Name": "Suite optique améliorée",
+      "Type": "Kit Armure",
+      "Description": "Casque. -<i class=\"die-symbol ng-isolate-scope setback\" ng-class=\"symbol\"/><i class=\"die-symbol ng-isolate-scope setback\" ng-class=\"symbol\"/> pour fumée, obscurité, etc.",
+      "Price": 1750
+    },{
+      "Name": "Pointeur laser",
+      "Type": "Kit Arme",
+      "Description": "+<i class=\"die-symbol ng-isolate-scope advantage\" ng-class=\"symbol\"/> en combat",
+      "Price": 500
+    },{
+      "Name": "Canon raccourci",
+      "Type": "Kit Arme",
+      "Description": "Dissimuler + facil",
+      "Price": 250
+    },{
+      "Name": "Viseur nocturne",
+      "Type": "Kit Arme",
+      "Description": "Utilisation dans le noir",
+      "Price": 500
+    }
+  ]
+}

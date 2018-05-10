@@ -1,0 +1,190 @@
+---
+layout : default
+---
+
+<!--Creation weapon table-->
+<script>
+    $(function() {
+        var weapons = [];
+
+        $.getJSON('stock.json', function(data) {
+            $.each(data.weapons, function(i, f) {
+                var tblRow = "<tr>" + "<td>" + f.Name + "</td>" +
+                    "<td>" + f.Skill + "</td>" + "<td>" + f.Dam + "</td>" + "<td>" + f.Crit + "</td>"+ "<td>" + f.Range + "</td>"+ "<td>" + f.Special + "</td>"+ "<td>" + f.Ability + "</td>"+"<td>" + f.Price + "</td>"+"</tr>";
+                $(tblRow).appendTo("#weapons-table tbody");
+            });
+
+        });
+
+    });
+</script>
+
+<!--Creation armor table-->
+<script>
+    $(function() {
+        var armors = [];
+
+        $.getJSON('stock.json', function(data) {
+            $.each(data.armors, function(i, f) {
+                var tblRow = "<tr>" + "<td>" + f.Name + "</td>" +
+                    "<td>" + f.Enc + "</td>" + "<td>" + f.Def + "</td>" + "<td>" + f.Special + "</td>"+ "<td>" + f.Price +"</td>"+"</tr>";
+                $(tblRow).appendTo("#armorTable tbody");
+            });
+
+        });
+
+    });
+</script>
+
+<!--Creation gear table-->
+<script>
+    $(function() {
+        var gears = [];
+
+        $.getJSON('stock.json', function(data) {
+            $.each(data.gears, function(i, f) {
+                var tblRow = "<tr>" + "<td>" + f.Name + "</td>" +
+                    "<td>" + f.Type + "</td>" + "<td>" + f.Description + "</td>" + "<td>" + f.Price + "</td>"+"</tr>";
+                $(tblRow).appendTo("#gear-table tbody");
+            });
+
+        });
+
+    });
+</script>
+
+<!--Creation kit table-->
+<script>
+    $(function() {
+        var kits = [];
+
+        $.getJSON('stock.json', function(data) {
+            $.each(data.kits, function(i, f) {
+                var tblRow = "<tr>" + "<td>" + f.Name + "</td>" +
+                    "<td>" + f.Type + "</td>" + "<td>" + f.Description + "</td>" + "<td>" + f.Price + "</td>"+"</tr>";
+                $(tblRow).appendTo("#kit-table tbody");
+            });
+
+        });
+
+    });
+</script>
+
+<!--Sorting script-->
+<script>
+    function sortTable(n,tablename) {
+        var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+        table = document.getElementById(tablename);
+        switching = true;
+        //Set the sorting direction to ascending:
+        dir = "asc";
+        /*Make a loop that will continue until
+        no switching has been done:*/
+        while (switching) {
+            //start by saying: no switching is done:
+            switching = false;
+            rows = table.getElementsByTagName("TR");
+            /*Loop through all table rows (except the
+            first, which contains table headers):*/
+            for (i = 1; i < (rows.length - 1); i++) {
+                //start by saying there should be no switching:
+                shouldSwitch = false;
+                /*Get the two elements you want to compare,
+                one from current row and one from the next:*/
+                x = rows[i].getElementsByTagName("TD")[n];
+                y = rows[i + 1].getElementsByTagName("TD")[n];
+                /*check if the two rows should switch place,
+                based on the direction, asc or desc:*/
+                if (dir == "asc") {
+                        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                            //if so, mark as a switch and break the loop:
+                            shouldSwitch = true;
+                            break;
+                        }
+                } else if (dir == "desc") {
+                        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                        //if so, mark as a switch and break the loop:
+                        shouldSwitch= true;
+                        break;
+                        }
+                }
+            }
+            if (shouldSwitch) {
+                /*If a switch has been marked, make the switch
+                and mark that a switch has been done:*/
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+                //Each time a switch is done, increase this count by 1:
+                switchcount ++;
+            } else {
+                /*If no switching has been done AND the direction is "asc",
+                set the direction to "desc" and run the while loop again.*/
+                if (switchcount == 0 && dir == "asc") {
+                    dir = "desc";
+                    switching = true;
+                }
+            }
+        }
+    }
+</script>
+
+<h2>Armes</h2>
+<div style="overflow-x:auto;">
+<table id="weapons-table">
+    <thead>
+    <th onclick="sortTable(0,'weapons-table')">Nom</th>
+    <th onclick="sortTable(1,'weapons-table')">Compétence</th>
+    <th onclick="sortTable(2,'weapons-table')">Dégâts</th>
+    <th onclick="sortTable(3,'weapons-table')">Crit</th>
+    <th onclick="sortTable(4,'weapons-table')">Portée</th>
+    <th onclick="sortTable(5,'weapons-table')">Spécial</th>
+    <th onclick="sortTable(6,'weapons-table')">Note</th>
+    <th onclick="sortTable(7,'weapons-table')">Prix</th>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+</div>
+
+<h2>Armures</h2>
+<div style="overflow-x:auto;">
+<table id="armorTable">
+    <thead>
+    <th onclick="sortTable(0,'armorTable')">Nom</th>
+    <th onclick="sortTable(1,'armorTable')">Encaiss.</th>
+    <th onclick="sortTable(2,'armorTable')">Déf.</th>
+    <th onclick="sortTable(3,'armorTable')">Spécial</th>
+    <th onclick="sortTable(4,'armorTable')">Prix</th>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+</div>
+
+<h2>Equipements</h2>
+<div style="overflow-x:auto;">
+<table id="gear-table">
+    <thead>
+    <th onclick="sortTable(0,'gear-table')">Nom</th>
+    <th onclick="sortTable(1,'gear-table')">Type</th>
+    <th onclick="sortTable(2,'gear-table')">Description</th>
+    <th onclick="sortTable(3,'gear-table')">Prix (crédit)</th>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+</div>
+
+<h2>Kits de customization</h2>
+<div style="overflow-x:auto;">
+<table id="kit-table">
+    <thead>
+    <th onclick="sortTable(0,'kit-table')">Nom</th>
+    <th onclick="sortTable(1,'kit-table')">Type</th>
+    <th onclick="sortTable(2,'kit-table')">Description</th>
+    <th onclick="sortTable(3,'kit-table')">Prix (crédit)</th>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+</div>

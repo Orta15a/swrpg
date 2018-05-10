@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles/swrpgaorfull.css">
+    <title>My Campaign</title>
+</head>
+<body ng-app="myApp" ng-cloak>
+<h1>A long time ago in a galaxy far far away...</h1>
+
+<npc name="Lt. Kestrel Novatra" rank="nemesis" brawn="2" agility="3" intellect="3" cunning="2" willpower="2" presence="3" soak="3" wounds="14" strain="13">
+
+    <skills discipline="2" coercion="2" computers="2" mechanics="2" cool="1" leadership="2" ranged-light="1" piloting-space="1" vigilance="1" ></skills>
+    <talents><b>Adversaire 1 :</b> Améliorez de 1 dés de difficulté les tests de comabts contre ce personnage.<br/>
+    Commandement 1 : ajouter <boost></boost> aux tests de Commandement.</talents>
+
+    <weapon name="Pistolet Blaster" skill="Distance (léger)" damage="6" critical="3" range="Moyenne"></weapon>
+
+</npc>
+
+
+<!-- BENETT-->
+<npc name="Sgt. Bennett" rank="rival" brawn="3" agility="3" intellect="2" cunning="2" willpower="2" presence="3" soak="4" wounds="14">
+
+    <skills discipline="1" cool="1" leadership="2" ranged-light="1" resilience="1" athletics="1" melee="1" ></skills>
+    <abilities><b>Ordre tactique -</b> Manoeuvre pour donner une manoeuvre gratuite à un groupe de minion ou un <boost></boost>.</abilities>
+
+    <weapon name="Pistolet Blaster" skill="Distance (léger)" damage="6" critical="3" range="Moyenne"></weapon>
+    <weapon name="Vibrolame" skill="Corps à corps" damage="4" critical="2" range="Au Contact"></weapon>
+
+</npc>
+
+<!-- JOHNSON-->
+<npc name="Cadet Johnson" rank="rival" brawn="2" agility="2" intellect="2" cunning="2" willpower="2" presence="2" soak="3" wounds="12">
+    <skills ranged-heavy="1" gunnery="1" vigilance="1" melee="1" ></skills>
+        <weapon name="Caabine Blaster EE-3 " skill="Distance (lourd)" damage="9" critical="3" range="Moyenne"></weapon>
+    <weapon name="Couteau" skill="Corps à corps" damage="3" critical="3" range="Au Contact"></weapon>
+</npc>
+
+
+<vehicle name="Voyageur obstiné" speed="3" silhouette="4" fore="1" aft="1" armor="2" handling="-2" sensor-range="Courte" hull="20" system="14" type="Cargo léger" ship="YT-1000" maker="Corellian Engineering Corporation" hyperdrive="Principal: Classe 3, Secours: 16" navicomputer="true" encum="150" consumables="2 mois" price="75,000" rarity="5" hardpoints="5" passengers="6" crew="Un pilote, un co-pilote">
+    <starship-weapon damage="5" critical="3" name="Canon Laser légers jumelés sur tourelle" fire-arc="tous" linked="1" range="Proche"></starship-weapon>
+</vehicle>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+<script src="/scripts/swrpgaor.min.js"></script>
+<script>
+    var app = angular.module("myApp", ['swaor']);
+</script>
+</html>
